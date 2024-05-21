@@ -29,6 +29,8 @@ h1{
 .grid-item{
     padding: 10px;
     border: 3px solid peachpuff;
+    width: 150px;
+    height: 200px;
 
 }
 
@@ -36,12 +38,44 @@ h1{
     width: 150px;
     height: 200px;
     transition: transform 0.2;
+    visibility: "visibile";
     
 }
 
-.toad.flip{
+/*
+.hide-toad{
+    visibility: hidden;
+    width: 150px;
+    height: 200px;
+}
+*/
+
+/*
+#front-face, #back-face{
+    position: absolute;
+    
+}
+/*
+#front-face{
     transform: rotateY(180deg);
 }
+
+
+.toad.flip{
+    transform: rotateY(180deg);
+    /*display: initial;*/
+
+
+/*
+#back-face{
+    transform: rotateY(180deg);
+}
+
+#front-face{
+    display:
+}
+
+*/
 
 
 /* Fonts */

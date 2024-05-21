@@ -1,7 +1,28 @@
-const toadContainer = document.querySelectorAll(".grid-item");
+//const toads = document.querySelectorAll(".toad");
+const toads = document.getElementsByClassName("toad");
 
-function flipToad(){
-    this.classList.toggle('flip');
+
+function displayToad(){
+    toads.classList.add("display-toad");
 }
 
-toadContainer.forEach(toad => toad.addEventListener('click', flipToad));
+function hideToad(){
+    toads.style.visibility = "hidden";
+}
+
+
+
+toads.forEach(toad => toad.addEventListener('click', hideToad));
+
+
+
+
+/*
+function hideToad(){
+
+    for (let i=0; i<toads.length; i++){
+        toads[i].style.visibility = "hidden";
+    }
+}
+*/
+
