@@ -38,8 +38,14 @@ h1{
     width: 150px;
     height: 200px;
     transition: transform 0.2;
-    visibility: "visibile";
+    visibility: hidden;
     
+}
+
+.display-toad{
+    visibility: visible;
+    width: 150px;
+    height: 200px;
 }
 
 /*
