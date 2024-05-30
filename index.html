@@ -9,20 +9,24 @@
 </head>
 <body>
     <h1>Tic Tac Toad</h1>
-    <div class="grid-container">
-        <div class="grid-item">
-            <img class="toad" src="images/red-toad.png" id="front-face">
-            <img src="" id="back-face">
-        </div>
+    <div class="grid-container" id="game-board">
+    
+        <!--<img class="toad" src="images/red-toad.png">-->
 
-        <div class="grid-item"><img class="toad" src="images/red-toad.png"></div>
-        <div class="grid-item"><img class="toad" src="images/red-toad.png"></div>
-        <div class="grid-item"><img class="toad" src="images/red-toad.png"></div>
-        <div class="grid-item"><img class="toad" src="images/red-toad.png"></div>
-        <div class="grid-item"><img class="toad" src="images/red-toad.png"></div>
-        <div class="grid-item"><img class="toad" src="images/red-toad.png"></div>
-        <div class="grid-item"><img class="toad" src="images/red-toad.png"></div>
-        <div class="grid-item"><img class="toad" src="images/red-toad.png"></div>
+        <div class="grid-item x" data-cell ><img class="toad" src="images/red-toad.png"></div>
+        <div class="grid-item" data-cell ><img class="toad" src="images/red-toad.png"></div>
+        <div class="grid-item" data-cell><img class="toad" src="images/red-toad.png"></div>
+        <div class="grid-item" data-cell><img class="toad" src="images/red-toad.png"></div>
+        <div class="grid-item" data-cell><img class="toad" src="images/red-toad.png"></div>
+        <div class="grid-item" data-cell><img class="toad" src="images/red-toad.png"></div>
+        <div class="grid-item" data-cell><img class="toad" src="images/red-toad.png"></div>
+        <div class="grid-item" data-cell><img class="toad" src="images/red-toad.png"></div>
+        <div class="grid-item" data-cell><img class="toad" src="images/red-toad.png"></div>
+    </div>
+
+    <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text></div>
+        <button id="restartBtn">Restart</button>
     </div>
 
 

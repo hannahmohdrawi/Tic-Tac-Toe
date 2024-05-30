@@ -1,3 +1,76 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    background-color: darkcyan;
+}
+
+h1{
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+:root{
+    --cell-size: 100px;
+    --mark-size: calc(var(--cell-size) * .9); 
+}
+
+body{
+    margin: 0;
+}
+
+.grid-container{
+    width: 100vw; 
+    height: 100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3, auto);
+}
+
+.grid-item{
+    width: var(--cell-size);
+    height: var(--cell-size);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.grid-item:first-child, 
+.grid-item:nth-child(2), 
+.grid-item:nth-child(3){
+    border-top: none;
+}
+
+.grid-item:nth-child(3n+1){
+    border-left: none;
+}
+
+.grid-item:nth-child(3n+3){
+    border-right: none;
+}
+
+.grid-item:last-child, 
+.grid-item:nth-child(8), 
+.grid-item:nth-child(7){
+    border-bottom: none;
+}
+
+.grid-item img{
+    width: var(--mark-size);
+    height: var(--mark-size);
+}
+
+
+
+
+
+
+/*
 body{
     background-color: black;
     color: white;
@@ -18,10 +91,9 @@ h1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    /*border: 2px solid peachpuff; */
-    /*border-inline: 2px solid white;*/
+    //border: 2px solid peachpuff; 
+    //border-inline: 2px solid white;
     
-    justify-items: center;
 
     
 }
@@ -48,20 +120,20 @@ h1{
     height: 200px;
 }
 
-/*
+
 .hide-toad{
     visibility: hidden;
     width: 150px;
     height: 200px;
 }
-*/
 
-/*
+
+
 #front-face, #back-face{
     position: absolute;
     
 }
-/*
+
 #front-face{
     transform: rotateY(180deg);
 }
@@ -69,10 +141,10 @@ h1{
 
 .toad.flip{
     transform: rotateY(180deg);
-    /*display: initial;*/
+    /*display: initial;
+}
 
 
-/*
 #back-face{
     transform: rotateY(180deg);
 }
@@ -81,15 +153,17 @@ h1{
     display:
 }
 
-*/
 
 
-/* Fonts */
+
+//Fonts 
 @font-face {
     font-family: 'Space Grotesk';
     font-style: normal;
     font-weight: 300 700;
     src: url(https://fonts.gstatic.com/s/spacegrotesk/v16/V8mDoQDjQSkFtoMM3T6r8E7mPbF4C_k3HqU.woff2) format('woff2');
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
+}
   
+
+*/
