@@ -1,4 +1,4 @@
-# PTic Tac Toad
+# Tic Tac Toad
 A interactive game based off Tic Tac Toe with a theme of Toad from Mario.
 
 ## Description
@@ -12,7 +12,7 @@ JavaScript will be added to incorporate multiple interactive features.
 * JavaScript
 
 ## Possible Future Changes:
-* Incorporate JavaScript for the following functions:
+* Incorporate JavaScript for the following functions
 * Allow user to choose toad counter
   
 ## Completed Date:
