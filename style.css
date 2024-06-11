@@ -66,6 +66,14 @@ body{
 }
 
 
+.toad{
+    visibility: hidden;
+}
+
+.display-toad{
+    visibility: visible;
+}
+
 
 
 
