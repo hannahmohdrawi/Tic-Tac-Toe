@@ -8,46 +8,49 @@
     <link rel="icon" type="image/x-icon" href="images/toadd.jpg">
 </head>
 <body>
-    <h1>Tic Tac Toad</h1>
-    <div class="grid-container" id="game-board">
-    
-        <!--<img class="toad" src="images/red-toad.png">-->
-
-        <div class="grid-item x" onclick="displayToad()" data-cell >
-            <img class="toad" src="images/red-toad.png">
-        </div>
-        <div class="grid-item" data-cell >
-            <img class="toad" src="images/red-toad.png">
-        </div>
-        <div class="grid-item" data-cell>
-            <img class="toad" src="images/red-toad.png">
-        </div>
-        <div class="grid-item" data-cell>
-            <img class="toad" src="images/red-toad.png">
-        </div>
-        <div class="grid-item" data-cell>
-            <img class="toad" src="images/red-toad.png">
-        </div>
-        <div class="grid-item" data-cell>
-            <img class="toad" src="images/red-toad.png">
-        </div>
-        <div class="grid-item" data-cell>
-            <img class="toad" src="images/red-toad.png">
-        </div>
-        <div class="grid-item" data-cell>
-            <img class="toad" src="images/red-toad.png">
-        </div>
-        <div class="grid-item" data-cell>
-            <img class="toad" src="images/red-toad.png">
-        </div>
-    </div>
-
-    <div class="gameDetails">
-        <h3 class="status-message" ></h3>
-        <h2 class="winning-message"></h2>
+    <div class="gameContainer">
+        <h1>Tic Tac Toad</h1>
+        <div class="grid-container">
         
-        <button id="restartBtn">Restart</button>
+            <!--<img class="toad" src="images/red-toad.png">-->
+
+            <div cellIndex="0" class="cell" >
+                <!--<img class="toad" src="images/red-toad.png"> -->
+            </div>
+            <div cellIndex="1" class="cell" >
+                <!--<img class="toad" src="images/red-toad.png"> -->
+            </div>
+            <div cellIndex="2" class="cell">
+                <!--<img class="toad" src="images/red-toad.png"> -->
+            </div>
+            <div cellIndex="3" class="cell">
+                <!--<img class="toad" src="images/red-toad.png"> -->
+            </div>
+            <div cellIndex="4" class="cell">
+                <!--<img class="toad" src="images/red-toad.png"> -->
+            </div>
+            <div cellIndex="5" class="cell">
+                <!--<img class="toad" src="images/red-toad.png"> -->
+            </div>
+            <div cellIndex="6" class="cell">
+                <!--<img class="toad" src="images/red-toad.png"> -->
+            </div>
+            <div cellIndex="7" class="cell">
+                <!--<img class="toad" src="images/red-toad.png"> -->
+            </div>
+            <div cellIndex="8" class="cell">
+                <!--<img class="toad" src="images/red-toad.png"> -->
+            </div>
+        </div>
+
+        <div class="gameDetails">
+            <h3 class="status-message" ></h3>
+            <h2 class="winning-message"></h2>
+            
+            <button id="restartBtn">Restart</button>
+        </div>
     </div>
+    
 
 
     <script src="index.js"></script>
